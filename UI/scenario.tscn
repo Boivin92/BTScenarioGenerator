@@ -1,0 +1,107 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvdk5njhdimek"]
+
+[ext_resource type="Texture2D" uid="uid://y0kvcp3aky6k" path="res://Factions/liao.png" id="1_2yw8r"]
+[ext_resource type="Texture2D" uid="uid://dw0wbu5wwj6tk" path="res://Factions/marik.png" id="2_6cw8f"]
+
+[node name="Scenario1" type="MarginContainer"]
+
+[node name="Collumns" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="FactionLogos" type="MarginContainer" parent="Collumns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="FactionsVBox" type="VBoxContainer" parent="Collumns/FactionLogos"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Employer" type="TextureRect" parent="Collumns/FactionLogos/FactionsVBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("1_2yw8r")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="VSLabel" type="Label" parent="Collumns/FactionLogos/FactionsVBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_font_sizes/font_size = 87
+text = "VS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OpFor" type="TextureRect" parent="Collumns/FactionLogos/FactionsVBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("2_6cw8f")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Details" type="MarginContainer" parent="Collumns"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="DetailsScroll" type="ScrollContainer" parent="Collumns/Details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailsVbox" type="VBoxContainer" parent="Collumns/Details/DetailsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 55
+
+[node name="MissionType" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "Mission Type: Assassination"
+fit_content = true
+
+[node name="Difficulty" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "Difficulty: Hard"
+fit_content = true
+
+[node name="Payout" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "Payout: 60 credits"
+fit_content = true
+
+[node name="Limitations" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "Limitations: 200 tons"
+fit_content = true
+
+[node name="OpFor" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "OpFor:
+-Trebuchet (3/5)
+-Kintaro (4/5)
+-Thunderbolt (4/5)
+-Commando (4/3)"
+fit_content = true
+
+[node name="Secondary" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "Secondary Objective:
+-Destroy Gun Emplacements (2)
+-10 Credits per emplacement"
+fit_content = true
+
+[node name="Twist" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "Twist: OpFor ambush"
+fit_content = true
+
+[node name="Terrain" type="RichTextLabel" parent="Collumns/Details/DetailsScroll/DetailsVbox"]
+layout_mode = 2
+text = "Terrain: Desert, Rough"
+fit_content = true

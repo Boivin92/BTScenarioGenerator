@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://15vu8dy3nwta"]
+
+[ext_resource type="PackedScene" uid="uid://dvdk5njhdimek" path="res://MissionsGenerator/scenario.tscn" id="1_vphem"]
+
+[node name="ScenarioView" type="TabContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Scenario 1" parent="." instance=ExtResource("1_vphem")]
+layout_mode = 2
+
+[node name="Scenario 2" parent="." instance=ExtResource("1_vphem")]
+visible = false
+layout_mode = 2
+
+[node name="Scenario 3" parent="." instance=ExtResource("1_vphem")]
+visible = false
+layout_mode = 2
