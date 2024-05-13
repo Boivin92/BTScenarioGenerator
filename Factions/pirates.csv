@@ -1,0 +1,140 @@
+Hornet HNT-151,20,488,Striker
+Hornet HNT-152,20,475,Striker
+Locust LCT-1V,20,432,Scout
+Locust LCT-3V,20,490,Scout
+Stinger STG-3G,20,497,Scout
+Stinger STG-3R,20,359,Scout
+Wasp WSP-1A,20,384,Scout
+Commando COM-2D,25,541,Striker
+Commando COM-7X,25,623,Striker
+Commando COM-7Y,25,684,Striker
+Mongoose MON-67,25,741,Striker
+Falcon FLC-4N,30,610,Scout
+Javelin JVN-10A,30,653,Striker
+Javelin JVN-10N,30,594,Striker
+Spider SDR-5V,30,622,Scout
+SuburbanMech UM-R90,30,773,Ambusher
+UrbanMech UM-R60,30,504,Ambusher
+Valkyrie VLK-QA,30,723,Missile Boat
+Valkyrie VLK-QF,30,653,Missile Boat
+Firestarter FS9-H,35,694,Scout
+Jenner JR7-D,35,875,Striker
+Ostscout OTT-7J,35,596,Scout
+Panther PNT-9R,35,769,Brawler
+Assassin ASN-21,40,749,Scout
+Cicada CDA-2A,40,659,Scout
+Clint CLNT-2-3T,40,770,Striker
+Hermes II HER-2S,40,784,Scout
+Vulcan VL-2T,40,642,Scout
+Vulcan VL-5T,40,942,Striker
+Whitworth WTH-1,40,982,Missile Boat
+Blackjack BJ-1,45,949,Sniper
+Phoenix Hawk PXH-1,45,1041,Skirmisher
+Vindicator VND-1R,45,1024,Brawler
+Wyvern WVE-6N,45,1005,Skirmisher
+Centurion CN9-A,50,945,Brawler
+Centurion CN9-AH,50,945,Juggernaut
+Centurion CN9-AL,50,1057,Brawler
+Chameleon TRC-4B,50,999,Scout
+Crab CRB-20,50,1143,Skirmisher
+Enforcer ENF-4R,50,1032,Skirmisher
+Hunchback HBK-4G,50,1041,Juggernaut
+Hunchback HBK-4H,50,1067,Juggernaut
+Hunchback HBK-4J,50,1143,Missile Boat
+Hunchback HBK-4N,50,1087,Brawler
+Hunchback HBK-4P,50,1138,Juggernaut
+Hunchback HBK-4SP,50,1043,Juggernaut
+Trebuchet TBT-5N,50,1191,Missile Boat
+Trebuchet TBT-5S,50,984,Skirmisher
+Dervish DV-6M,55,1146,Missile Boat
+Gladiator GLD-3R,55,1282,Missile Boat
+Gladiator GLD-4R,55,1291,Skirmisher
+Griffin GRF-1N,55,1272,Sniper
+Scorpion SCP-1N,55,1019,Skirmisher
+Shadow Hawk SHD-2H,55,1064,Skirmisher
+Shadow Hawk SHD-3H,55,1043,Skirmisher
+Wolverine WVR-6R,55,1101,Skirmisher
+Champion CHP-2N,60,1116,Skirmisher
+Dragon DRG-1N,60,1125,Skirmisher
+Merlin MLN-1A,60,1217,Brawler
+Ostroc OSR-2C,60,1228,Skirmisher
+Ostroc OSR-2L,60,1233,Skirmisher
+Ostroc OSR-3C,60,1288,Skirmisher
+Ostsol OTL-4D,60,1277,Skirmisher
+Quickdraw QKD-4G,60,1192,Skirmisher
+Quickdraw QKD-4H,60,1242,Skirmisher
+Quickdraw QKD-5A,60,1196,Skirmisher
+Rifleman RFL-3N,60,1039,Sniper
+Bombardier BMB-10D,65,1340,Missile Boat
+Catapult CPLT-C1,65,1399,Missile Boat
+Crusader CRD-3R,65,1317,Missile Boat
+JagerMech JM6-S,65,901,Sniper
+Thunderbolt TDR-5D,65,1231,Brawler
+Thunderbolt TDR-5S,65,1335,Brawler
+Thunderbolt TDR-5SE,65,1414,Skirmisher
+Archer ARC-2R,70,1477,Missile Boat
+Grasshopper GHR-5H,70,1427,Skirmisher
+Guillotine GLT-4L,70,1400,Skirmisher
+Guillotine GLT-4P,70,1376,Skirmisher
+Viper VP-1,70,1609,Brawler
+Viper VP-5,70,1539,Brawler
+Warhammer WHM-6R,70,1299,Brawler
+Black Knight BL-7-KNT,75,1443,Brawler
+Marauder MAD-3R,75,1363,Sniper
+Orion ON1-K,75,1429,Brawler
+Orion ON1-V,75,1298,Brawler
+Orion ON1-VA,75,1328,Juggernaut
+Stalker STK-4P,75,1461,Juggernaut
+Awesome AWS-8Q,80,1605,Sniper
+Awesome AWS-8R,80,1470,Missile Boat
+Awesome AWS-8T,80,1593,Missile Boat
+Awesome AWS-8V,80,1510,Sniper
+Charger CGR-1A1,80,981,Scout
+Charger CGR-1A5,80,1468,Juggernaut
+Goliath GOL-1H,80,1449,Sniper
+Thug THG-10E,80,1501,Brawler
+Victor VTR-9B,80,1378,Skirmisher
+Zeus ZEU-6S,80,1348,Sniper
+BattleMaster BLR-1G,85,1519,Brawler
+BattleMaster BLR-1G-DC,85,1494,Brawler
+Crockett CRK-5003-0,85,1704,Juggernaut
+Longbow LGB-0W,85,1337,Missile Boat
+Longbow LGB-0W2,85,1410,Missile Boat
+Longbow LGB-7Q,85,1618,Missile Boat
+Longbow LGB-8C,85,1653,Missile Boat
+Stalker STK-3F,85,1559,Juggernaut
+Stalker STK-3H,85,1624,Missile Boat
+Stalker STK-4N,85,1558,Juggernaut
+Cyclops CP-10-Q,90,1584,Missile Boat
+Cyclops CP-10-Z,90,1317,Juggernaut
+Banshee BNC-3E,95,1422,Sniper
+Atlas AS7-A,100,1787,Juggernaut
+Atlas AS7-D,100,1897,Juggernaut
+Atlas AS7-D-DC,100,1858,Juggernaut
+Atlas AS7-RS,100,1849,Juggernaut
+King Crab KGC-0000,100,1810,Juggernaut
+Marauder II MAD-4A,100,2073,Juggernaut
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
