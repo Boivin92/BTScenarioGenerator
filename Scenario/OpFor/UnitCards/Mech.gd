@@ -2,7 +2,9 @@ extends UnitCard
 class_name Mech
 
 var Chassis : String
+var Tonnage : int
 var BattleValue : int
+var Role : String
 var Gunnery : int
 var Piloting : int
 
@@ -18,10 +20,10 @@ const BV_MULT_TABLE := [
 ]
 
 func Print_Details() -> String:
-	return Chassis + " (" + str(Gunnery) + " / " + str(Piloting) + ")"
+	return "%s (%s / %s)" % [Chassis, Gunnery, Piloting]
 
-func Recalculate_Effective_Value() -> void:
-	EffectiveValue = BattleValue * BV_MULT_TABLE[Piloting][Gunnery]
+func _recalculate_Effective_Value() -> int:
+	return BattleValue * BV_MULT_TABLE[Piloting][Gunnery]
 
 func Upgrade() -> void: #Oui c'est normal que ça puisse "rien" faire
 	if randi() % 2:

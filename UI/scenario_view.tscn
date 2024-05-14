@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://15vu8dy3nwta"]
+[gd_scene load_steps=2 format=3 uid="uid://bwapy21ktils7"]
 
-[ext_resource type="PackedScene" uid="uid://dvdk5njhdimek" path="res://MissionsGenerator/scenario.tscn" id="1_vphem"]
+[ext_resource type="PackedScene" uid="uid://dvdk5njhdimek" path="res://UI/scenario.tscn" id="1_vphem"]
 
 [node name="ScenarioView" type="TabContainer"]
 anchors_preset = 15

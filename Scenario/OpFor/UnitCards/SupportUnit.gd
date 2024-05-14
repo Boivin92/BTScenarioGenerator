@@ -13,10 +13,10 @@ func _init(_name, bvReg, bvElite):
 	BattleValueElite = bvElite
 
 func Print_Details() -> String:
-	return str(Quantity) + "x " + (" Elite " if Elite else "") + UnitName
+	return "%s x %s%s" % [Quantity, ("Elite " if Elite else ""), UnitName]
 
-func Recalculate_Effective_Value() -> void:
-	EffectiveValue = Quantity * BattleValueElite if Elite else Quantity * BattleValueRegular
+func _recalculate_Effective_Value() -> int:
+	return Quantity * BattleValueElite if Elite else Quantity * BattleValueRegular
 
 func Upgrade() -> void: #Oui c'est normal que ça puisse "rien" faire
 	if randi() % 2:

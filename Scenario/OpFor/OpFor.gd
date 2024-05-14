@@ -21,6 +21,8 @@ func Try_Add_Unit(new_unit : UnitCard) -> bool:
 func validate_different(unit1 : UnitCard, unit2 : UnitCard) -> bool:
 	return not unit1.Is_Same_As(unit2)
 
+func Build(limits : Array) -> void:
+	pass
 
 ##GOAL: The API should eventually allow for something like this:
 ##	opFor.Build([

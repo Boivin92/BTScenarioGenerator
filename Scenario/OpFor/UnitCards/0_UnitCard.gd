@@ -3,16 +3,13 @@ class_name UnitCard
 
 var EffectiveValue : int:
 	get:
-		Recalculate_Effective_Value()
-		return EffectiveValue
-	set(value):
-		EffectiveValue = value
+		return _recalculate_Effective_Value()
 
 func Print_Details() -> String:
 	return ""
 
-func Recalculate_Effective_Value() -> void:
-	pass
+func _recalculate_Effective_Value() -> int:
+	return 0
 
 func Upgrade() -> void:
 	pass
