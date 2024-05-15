@@ -1,3 +1,4 @@
+## Abstract / Interface Class
 extends Node
 class_name UnitCard
 
