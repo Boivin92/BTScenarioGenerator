@@ -9,8 +9,8 @@ var BattleValueElite : int
 
 func _init(_name, bvReg, bvElite):
 	UnitName = _name
-	BattleValueRegular = bvReg
-	BattleValueElite = bvElite
+	BattleValueRegular = int(bvReg)
+	BattleValueElite = int(bvElite)
 
 func Print_Details() -> String:
 	return "%s x %s%s" % [Quantity, ("Elite " if Elite else ""), UnitName]
