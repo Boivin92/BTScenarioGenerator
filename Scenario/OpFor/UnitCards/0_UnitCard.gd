@@ -2,6 +2,8 @@
 extends Node
 class_name UnitCard
 
+var unit
+
 var EffectiveValue : int:
 	get:
 		return _recalculate_Effective_Value()

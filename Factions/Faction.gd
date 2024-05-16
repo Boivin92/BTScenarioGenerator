@@ -13,13 +13,7 @@ func _init(fname : String, logo : Texture2D) -> void:
 func load_mechs(mechArray : CsvData):
 	PossibleMechs.clear()
 	for mech in mechArray.records:
-		var m := Mech.new()
-		m.Chassis = mech[0]
-		m.Tonnage = int(mech[1])
-		m.BattleValue = int(mech[2])
-		m.Role = mech[3]
-		m.Gunnery = 4
-		m.Piloting = 5
+		var m := Mech.new(mech[0], int(mech[1]), int(mech[2]), mech[3])
 		PossibleMechs.append(m)
 
 func load_support_assets(assetsArray : CsvData):

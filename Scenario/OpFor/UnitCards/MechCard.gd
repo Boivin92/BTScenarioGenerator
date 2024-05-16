@@ -1,10 +1,6 @@
 extends UnitCard
-class_name Mech
+class_name MechCard
 
-var Chassis : String
-var Tonnage : int
-var BattleValue : int
-var Role : String
 var Gunnery : int
 var Piloting : int
 
@@ -20,10 +16,10 @@ const BV_MULT_TABLE := [
 ]
 
 func Print_Details() -> String:
-	return "%s (%s / %s)" % [Chassis, Gunnery, Piloting]
+	return "%s (%s / %s)" % [unit.Chassis, unit.Gunnery, unit.Piloting]
 
 func _recalculate_Effective_Value() -> int:
-	return BattleValue * BV_MULT_TABLE[Piloting][Gunnery]
+	return unit.BattleValue * BV_MULT_TABLE[Piloting][Gunnery]
 
 func Upgrade() -> void: #Oui c'est normal que ça puisse "rien" faire
 	if randi() % 2:
@@ -37,10 +33,10 @@ func Downgrade() -> void: #Oui c'est normal que ça puisse "rien" faire
 	else:
 		Piloting = clampi(Piloting + 1, 0, 6)
 
-func Is_Same_As(unit : UnitCard) -> bool:
-	if unit is Mech:
-		var selfChassis = Chassis.split(" ")
-		var otherChassis = Chassis.split(" ")
+func Is_Same_As(other) -> bool:
+	if other is Mech:
+		var selfChassis = unit.Chassis.split(" ")
+		var otherChassis = other.Chassis.split(" ")
 		for i in selfChassis.size()-1:
 			if otherChassis[i] != selfChassis[i]:
 				return false

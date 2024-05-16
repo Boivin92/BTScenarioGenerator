@@ -24,13 +24,6 @@ func validate_different(unit1 : UnitCard, unit2 : UnitCard) -> bool:
 # Have fun avec une config impossible qui cause une infinite loop, fucker
 func Build(config : OpForConfig) -> void:
 	
-	#FIXME: J'ai fait une erreur pi ça me tente pas de tout corriger pour l'instant
-	#Faudrait séparé le Mech de la UnitCard, pareil pour les support
-	#Ça nous permettrait de créer des unitcards en injectant une unit, plutôt que de devoir reloader
-	#Oops I guess
-	#Workaround en attendant que la motivation revienne
-	FactionLoader.reload()
-	
 	# REGION : SUPPORT
 	if config.AllowSupport:
 		var lower = config.ExpectedBV * config.ShareAllowedToSupport * (1-config.Tolerance)
@@ -50,7 +43,7 @@ func Build(config : OpForConfig) -> void:
 			
 			#recalculate EBV2 for supports
 			effectiveSupport = Units.filter(
-				func(u: UnitCard) : return u is SupportUnit
+				func(u: UnitCard) : return u is SupportCard
 				).reduce(
 					func(accum, u : SupportUnit) : return accum + u.EffectiveValue, 0)
 	
@@ -60,19 +53,20 @@ func Build(config : OpForConfig) -> void:
 	pass
 
 func _upgrade_random_support():
-	Units.filter(func(u : UnitCard) : return u is SupportUnit).pick_random().Upgrade()
+	Units.filter(func(u : UnitCard) : return u is SupportCard).pick_random().Upgrade()
 
 func _add_random_support(maxValue : int):
-	Units.append(Loyalty.PossibleSupportAssets.filter(
-					func(a : SupportUnit): return not Units.any(
-						func(u : UnitCard) : return u.Is_Same_As(a))).filter(
-							func(a : SupportUnit):return a.BattleValueRegular < maxValue).pick_random())
+	var newUnit : SupportUnit = Loyalty.PossibleSupportAssets.filter(
+		func(possibleUnit): return not Units.any(
+			func(registeredUnit : UnitCard): return registeredUnit.Is_Same_As(possibleUnit))).filter(
+				func(possibleUnit : SupportUnit): return possibleUnit.BattleValueRegular < maxValue).pick_random()
+	Units.append(SupportCard.new(newUnit, 1, false))
 
 func _remove_random_support(maxValue : int):
 	Units.remove_at(Units.find(
 		Units.filter(
-			func(u) : return u is SupportUnit).filter(
-				func(u : SupportUnit) : return u.EffectiveValue < maxValue).pick_random()))
+			func(u) : return u is SupportCard).filter(
+				func(u : SupportCard) : return u.EffectiveValue < maxValue).pick_random()))
 
 func _downgrade_random_support():
-	Units.filter(func(u : UnitCard) : return u is SupportUnit).pick_random().Downgrade()
+	Units.filter(func(u : UnitCard) : return u.unit is SupportUnit).pick_random().Downgrade()
